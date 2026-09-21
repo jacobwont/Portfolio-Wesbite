@@ -79,6 +79,7 @@
   --bubble-w: clamp(2.1rem, 9vw, 3.8rem);
   --bubble-w-expanded: clamp(6.5rem, 30vw, 11.9rem);
   position: relative;
+  z-index: 1;
   display: flex;
   align-items: center;
   justify-content: center;
