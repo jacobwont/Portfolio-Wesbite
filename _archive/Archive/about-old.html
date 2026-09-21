@@ -1,0 +1,229 @@
+<html lang="en">
+  <head>
+    <!-- Hotjar Tracking Code for https://jacob-laird.com/ -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 3077346, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="image/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | Jacob Laird</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="white-bttm-grad"></div>
+
+    <div class="blobs">
+      <img
+        class="blob-a1"
+        src="/image/blobs/Red.png"
+        style="padding-left: 200px"
+      />
+    </div>
+
+    <div class="topnav">
+      <div class="nav-container">
+        <div class="box-e">
+          <a style="float: left" class="Home" href="/">&ensp;Jacob Laird</a>
+        </div>
+        <a target="_blank" href="/media/JACOB LAIRD RESUME.pdf">Resume&ensp;</a>
+        <a href="about.html">About</a>
+        <a href="/#rwork">Work</a>
+      </div>
+    </div>
+
+    <div class="menu">
+      <nav class="menu__nav">
+        <ul class="menu__list r-list">
+          <li class="menu__group">
+            <a href="/" class="menu__link r-link">Home</a>
+          </li>
+          <li class="menu__group">
+            <a href="/#rwork" class="menu__link r-link">Work</a>
+          </li>
+          <li class="menu__group">
+            <a href="about.html" class="menu__link r-link">About</a>
+          </li>
+          <li class="menu__group">
+            <a
+              target="_blank"
+              href="/media/JACOB LAIRD RESUME.pdf"
+              class="menu__link r-link"
+              >Resume</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <button class="menu__toggle r-button" type="button">
+        <span class="menu__hamburger m-hamburger">
+          <span class="m-hamburger__label">
+            <span class="menu__screen-reader screen-reader">Open menu</span>
+          </span>
+        </span>
+      </button>
+    </div>
+
+    <div class="about-page-content master">
+      <div class="about-left">
+        <div id="name">
+          <h2>Jacob Laird</h2>
+        </div>
+      </div>
+      <div class="about-right">
+        <div id="about">
+          <p>
+            Hi, I'm Jacob Laird.<br />
+
+            I'm a UX/UI design generalist who loves working across the product
+            lifecycle from discovery to delivery - from conducting user research
+            and wireframing designs to building beautiful interfaces and coding
+            prototypes.
+            <br /><br />
+            Currently, I’m tutoring Interaction Design at the University of
+            Technology Sydney and working on digital products that visualise the
+            Australian infrastructure pipeline for a Sydney based think tank.
+            <br /><br />
+            With a background in filmmaking and motion design I understand both
+            the storytelling behind digital products and the creative execution
+            that makes them shine.
+            <br /><br />
+            I believe that good design starts by really understanding what
+            people need to build delightful experiences that solve their
+            problems.
+            <br /><br /><br />
+          </p>
+
+          <table style="width: 100%; vertical-align: top">
+            <tr style="width: 100%">
+              <td style="width: 50%; vertical-align: top; padding-right: 15px">
+                <h4>Skills</h4>
+                <ul>
+                  <li>UX Design</li>
+                  <li>UI Design</li>
+                  <li>Front-End Development</li>
+
+                  <li>Motion Design</li>
+                  <li>Graphic Design</li>
+                  <li>Animation</li>
+                  <li>Video Production</li>
+                  <li>Digital Marketing</li>
+                  <li>Analytics & Reporting</li>
+                </ul>
+              </td>
+              <td style="width: 50%; vertical-align: top">
+                <h4>Tools</h4>
+                <ul>
+                  <li>Figma</li>
+                  <li>Sketch</li>
+                  <li>Adobe Creative Suite</li>
+                  <li>Framer</li>
+                  <li>Zeplin</li>
+                  <li>InVision</li>
+                  <li>HTML & CSS</li>
+                  <li>JavaScript</li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+          <br />
+          <p>
+            Let's Talk,<br /><a href="mailto:jacobwont@gmail.com"
+              >Get in touch</a
+            >
+            for opportunities or just to say hi! 👋
+          </p>
+          <br />
+          <div class="icons">
+            <a target="_blank" href="https://dribbble.com/jacobwont"
+              ><img src="/image/icons/dribbble.svg"
+            /></a>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/jacob-laird-777680112/"
+              ><img src="/image/icons/linkedin.svg"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      (function () {
+        "use strict";
+
+        class Menu {
+          constructor(settings) {
+            this.menuNode = settings.menuNode;
+            this.state = false;
+            this.menuStateTextNode =
+              settings.menuStateTextNode ||
+              this.menuNode.querySelector(".menu__screen-reader");
+            this.menuOpenedText = settings.menuOpenedText || "Open menu";
+            this.menuClosedText = settings.menuClosedText || "Close menu";
+          }
+
+          changeState(state) {
+            return (this.state = !state);
+          }
+
+          changeStateText(state, node) {
+            let text =
+              state !== true ? this.menuOpenedText : this.menuClosedText;
+
+            node.textContent = text;
+            return text;
+          }
+
+          toggleMenuState(className) {
+            let state;
+
+            if (typeof className !== "string" || className.length === 0) {
+              return console.log(
+                "you did not give the class for the toggleState function"
+              );
+            }
+
+            state = this.changeState(this.state);
+
+            this.changeStateText(state, this.menuStateTextNode);
+            this.menuNode.classList.toggle(className);
+
+            return state;
+          }
+        }
+
+        const jsMenuNode = document.querySelector(".menu");
+        const demoMenu = new Menu({
+          menuNode: jsMenuNode,
+        });
+
+        function callMenuToggle(event) {
+          demoMenu.toggleMenuState("menu_activated");
+        }
+
+        jsMenuNode
+          .querySelector(".menu__toggle")
+          .addEventListener("click", callMenuToggle);
+      })();
+    </script>
+  </body>
+</html>

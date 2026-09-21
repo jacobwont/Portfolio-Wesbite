@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jacob Laird — Education, technology &amp; design</title>
+    <meta
+      name="description"
+      content="Jacob Laird designs learning experiences at the Apple Developer Academy Bali, working where design, education, and technology meet."
+    />
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href="assets/fonts/woff2/SF-Pro-Display-Semibold.woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="assets/new hero.webp"
+      fetchpriority="high"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/home.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap nav">
+        <a class="nav__brand" href="index.html">Jacob Laird</a>
+        <nav aria-label="Primary">
+          <ul class="nav__links" id="nav-links">
+            <li><a href="education.html">Education</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </nav>
+        <button
+          class="nav__toggle"
+          aria-expanded="false"
+          aria-controls="nav-links"
+          aria-label="Toggle menu"
+        >
+          <span class="nav__toggle-icon"></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero wrap">
+        <div
+          class="hero-scene"
+          role="img"
+          aria-label="Illustrated sky scene with Jacob's Memoji, saying hello, surrounded by photos from the Apple Developer Academy in Bali and stickers for Mathletics, Bali, Swift, Apple and UTS"
+        >
+          <div class="hero-scene__bg" aria-hidden="true">
+            <!--
+              Swap the source below for a dedicated mobile hero once it's
+              ready — nothing else needs to change, the breakpoint is
+              already wired up.
+            -->
+            <picture>
+              <source media="(max-width: 640px)" srcset="assets/new hero.webp" />
+              <img
+                src="assets/new hero.webp"
+                alt=""
+                width="2357"
+                height="1335"
+                fetchpriority="high"
+                loading="eager"
+                decoding="async"
+              />
+            </picture>
+          </div>
+
+          <div class="hero-heart" aria-hidden="true">
+            <img
+              src="assets/Love.webp"
+              alt=""
+              width="258"
+              height="258"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+
+          <div class="imessage-bubble" aria-hidden="true">
+            <span class="imessage-bubble__inner">
+              <span class="imessage-bubble__dots">
+                <i></i><i></i><i></i>
+              </span>
+              <span class="imessage-bubble__text">Hello, I'm Jacob</span>
+            </span>
+          </div>
+        </div>
+
+        <div class="hero-heading reveal">
+          <h1>Education, technology &amp; design</h1>
+          <p>
+            Hey it's Jacob, I'm currently designing learning experiences at
+            the Apple Developer Academy Bali.
+          </p>
+        </div>
+      </section>
+
+      <section class="band">
+        <div class="wrap">
+          <div class="section-head reveal">
+            <h2>Moments of learning</h2>
+          </div>
+
+          <div class="feature-row reveal">
+            <div class="feature-row__text">
+              <span class="eyebrow">Apple Developer Academy Bali</span>
+              <h3>Community as Curriculum</h3>
+              <p>
+                How do you get 220 learners to really understand a community
+                they have never met? You send them out to listen. Across 25
+                communities in Bali, teams sit with real people, ask, and try
+                to see the world through someone else's eyes before they
+                design a single thing.
+              </p>
+              <p>
+                My real challenge was two sided: building a pipeline of
+                communities willing to open their doors, and equipping
+                learners to take on the hard work of collaboration.
+              </p>
+              <a class="btn btn--ghost" href="community-as-curriculum.html">
+                Learn more
+              </a>
+            </div>
+            <div class="feature-row__media">
+              <div class="feature-collage">
+                <img
+                  src="assets/Community Challenge Hero.webp"
+                  alt="Collage of photos from community visits across Bali: team interviews, a workshop session, and a craft studio."
+                  width="1101"
+                  height="774"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <img
+                  class="feature-collage__sticker feature-collage__sticker--bali"
+                  src="assets/Bali.webp"
+                  alt=""
+                  aria-hidden="true"
+                  width="538"
+                  height="466"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <img
+                  class="feature-collage__sticker feature-collage__sticker--mask"
+                  src="assets/Mask.webp"
+                  alt=""
+                  aria-hidden="true"
+                  width="614"
+                  height="622"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <img
+                  class="feature-collage__sticker feature-collage__sticker--flower-sm"
+                  src="assets/Flower.webp"
+                  alt=""
+                  aria-hidden="true"
+                  width="583"
+                  height="653"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="feature-row feature-row--reverse reveal">
+            <div class="feature-row__media">
+              <div class="feature-collage">
+                <img
+                  src="assets/My Bali App Hero.webp"
+                  alt="Collage of screens and photos from My Bali App: onboarding screens, code, and learners building together."
+                  width="1096"
+                  height="817"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <img
+                  class="feature-collage__sticker feature-collage__sticker--palms"
+                  src="assets/Palms.webp"
+                  alt=""
+                  aria-hidden="true"
+                  width="662"
+                  height="706"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <img
+                  class="feature-collage__sticker feature-collage__sticker--flower"
+                  src="assets/Flower.webp"
+                  alt=""
+                  aria-hidden="true"
+                  width="583"
+                  height="653"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <img
+                  class="feature-collage__sticker feature-collage__sticker--monkey"
+                  src="assets/Monkey.webp"
+                  alt=""
+                  aria-hidden="true"
+                  width="468"
+                  height="706"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+            </div>
+            <div class="feature-row__text">
+              <span class="eyebrow">Apple Developer Academy Bali</span>
+              <h3>My Bali App</h3>
+              <p>
+                How might someone experience their first week at the Academy?
+                By building and shipping their own iOS app in just five days.
+                My Bali App takes brand new learners from a big idea to
+                something real on their phone, fast.
+              </p>
+              <p>
+                My job was to make five days feel possible, designing the
+                experience with enough support to carry someone all the way
+                to their first shipped app.
+              </p>
+              <a class="btn btn--ghost" href="my-bali-app.html">
+                Learn more
+              </a>
+            </div>
+          </div>
+
+          <p class="moments-footlink reveal">
+            <a class="link-arrow" href="education.html">
+              See what else is happening on the learning floor
+            </a>
+          </p>
+        </div>
+      </section>
+
+      <section class="wrap wrap--full work-section">
+        <div class="section-head section-head--tight reveal">
+          <h2>Selected Work</h2>
+          <p>Selected projects and product design</p>
+        </div>
+
+        <ul class="work-scroller reveal" aria-label="Selected work">
+          <li class="work-card work-card--mathletics">
+            <a href="new-courses.html">
+              <div class="work-card__cover">
+                <img
+                  class="cover-img"
+                  src="assets/New Courses.webp"
+                  alt="Mathletics new courses"
+                  width="1011"
+                  height="489"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="work-card__body">
+                <span class="work-card__cat">Mathletics</span>
+                <h3>New courses</h3>
+                <p>
+                  A new course structure giving students a clearer path from
+                  understanding to reasoning and lasting mastery
+                </p>
+              </div>
+            </a>
+          </li>
+          <li class="work-card work-card--mojo">
+            <a href="mojo.html">
+              <div class="work-card__cover">
+                <img
+                  class="cover-img"
+                  src="assets/Mojo.webp"
+                  alt="Mojo landing page"
+                  width="1012"
+                  height="489"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="work-card__body">
+                <span class="work-card__cat">Mojo</span>
+                <h3>Repositioning</h3>
+                <p>
+                  Repositioned a consumer self development and learning app
+                  into an enterprise product, opening a new B2B channel
+                </p>
+              </div>
+            </a>
+          </li>
+          <li class="work-card work-card--mathletics">
+            <a href="student-centre.html">
+              <div class="work-card__cover">
+                <img
+                  class="cover-img"
+                  src="assets/Student Centre.webp"
+                  alt="Mathletics Student Centre"
+                  width="1011"
+                  height="489"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="work-card__body">
+                <span class="work-card__cat">Mathletics</span>
+                <h3>Student Center</h3>
+                <p>
+                  A full student platform redesign that got kids finishing 25%
+                  more maths using research backed gamification for consistent practice
+                </p>
+              </div>
+            </a>
+          </li>
+          <li class="work-card work-card--atlas">
+            <a href="atlas.html">
+              <div class="work-card__cover">
+                <img
+                  class="cover-img"
+                  src="assets/Atlas.webp"
+                  alt="Atlas geography quiz app"
+                  width="1011"
+                  height="489"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="work-card__body">
+                <span class="work-card__cat">Atlas</span>
+                <h3>Geography Quiz</h3>
+                <p>
+                  A short, daily geography challenge, one quiz a day, easy to
+                  pick up, built to bring a little learning into a habit
+                  people already have
+                </p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="band">
+        <div class="wrap about-teaser reveal">
+          <div class="about-teaser__figure">
+            <img
+              src="assets/About Memoji.webp"
+              alt="Jacob's Memoji, waving"
+              width="833"
+              height="722"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+          <div class="about-teaser__text">
+            <h2>About</h2>
+            <p>
+              I work where design, education, and technology meet, and I have
+              for most of my career.
+            </p>
+            <p>
+              Today I am a design mentor at the
+              <a class="link-underline" href="about.html"
+                >Apple Developer Academy in Bali</a
+              >, where I architect and facilitate a year long challenge based
+              learning arc.
+            </p>
+            <p>I make things, and I help other people make things.</p>
+            <a class="link-arrow" href="about.html">More about me</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="wrap">
+        <div class="tinker reveal">
+          <h2>tinkering with..</h2>
+          <div class="tinker-graphic">
+            <img
+              class="tinker-folder-image"
+              src="assets/tinkering/Folder.webp"
+              alt=""
+              aria-hidden="true"
+              width="377"
+              height="403"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="tinker-heart" aria-hidden="true">
+              <img
+                src="assets/Love.webp"
+                alt=""
+                width="258"
+                height="258"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+          </div>
+        </div>
+        <p class="text-body reveal">
+          Always building something new — small tools and education apps,
+          check them out on the
+          <a
+            class="link-underline link-underline--strong"
+            href="https://apps.apple.com/us/developer/jacob-laird/id1811312756"
+            target="_blank"
+            rel="noopener"
+            >App Store</a
+          >.
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap footer-cta reveal">
+        <div class="footer-cta__icon" aria-hidden="true">👋</div>
+        <p>
+          If you are building learning, or building anything, say hello on
+          <a class="link-underline link-underline--strong" href="mailto:hello@jacoblaird.com">Email</a>
+          or
+          <a
+            class="link-underline link-underline--strong"
+            href="https://www.linkedin.com/in/jacob-laird-777680112/"
+            target="_blank"
+            rel="noopener"
+            >LinkedIn</a
+          >.
+        </p>
+      </div>
+      <div class="wrap footer-bar">
+        <a href="mailto:hello@jacoblaird.com">hello@jacoblaird.com</a>
+        <div class="footer-bar__social">
+          <a href="https://www.linkedin.com/in/jacob-laird-777680112/" target="_blank" rel="noopener"
+            >LinkedIn</a
+          >
+          <a href="https://apps.apple.com/us/developer/jacob-laird/id1811312756" target="_blank" rel="noopener"
+            >App Store</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

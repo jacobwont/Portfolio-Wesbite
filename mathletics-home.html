@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mathletics for Home — Jacob Laird</title>
+    <meta
+      name="description"
+      content="Case study: cutting a 15 step sign up down to 6 and building a parent dashboard for Mathletics for Home."
+    />
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/pages.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap nav">
+        <a class="nav__brand" href="index.html">Jacob Laird</a>
+        <nav aria-label="Primary">
+          <ul class="nav__links" id="nav-links">
+            <li><a href="education.html">Education</a></li>
+            <li><a href="projects.html" aria-current="page">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </nav>
+        <button
+          class="nav__toggle"
+          aria-expanded="false"
+          aria-controls="nav-links"
+          aria-label="Toggle menu"
+        >
+          <span class="nav__toggle-icon"></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero wrap">
+        <a class="cs-back" href="projects.html">&larr; Back to projects</a>
+
+        <h1 style="font-size: var(--fs-h1); margin-bottom: var(--space-md);">
+          Mathletics for Home
+        </h1>
+
+        <div class="cs-meta">
+          <span class="cs-chip">Role: Product Designer</span>
+          <span class="cs-chip">3P Learning</span>
+          <span class="cs-chip">6 months</span>
+        </div>
+
+        <div class="cs-lead-image reveal">
+          <img
+            class="cover-img"
+            src="assets/images/case-study/mathletics-home.png"
+            alt="Mathletics for Home onboarding and dashboard"
+          />
+        </div>
+
+        <div class="cs-overview reveal">
+          <span class="eyebrow">Overview</span>
+          <p>
+            Mathletics for Home is the version parents buy and manage on
+            behalf of their kids. I redesigned onboarding and built a
+            parent dashboard to fix a sign-up flow that was losing people.
+          </p>
+        </div>
+
+        <div class="cs-columns reveal">
+          <div>
+            <h3>The problem</h3>
+            <p>
+              Sign-up took 15 steps and routed parents through external
+              payment pages. Most who made it through had no idea how to
+              get their child logged in.
+            </p>
+          </div>
+          <div>
+            <h3>The work</h3>
+            <p>
+              Cut sign-up to 6 steps with payment embedded directly in the
+              page, added clear next-steps right after purchase, and built
+              a parent dashboard with weekly progress and an upgrade path
+              to annual.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="cs-outcome wrap reveal">
+        <h3>Outcome</h3>
+        <div class="stat-grid">
+          <div class="stat-tile">
+            <div class="stat-tile__number">15 to 6</div>
+            <p>steps in the new sign-up flow</p>
+          </div>
+          <div class="stat-tile">
+            <div class="stat-tile__number">Embedded</div>
+            <p>payment, no more leaving the site</p>
+          </div>
+          <div class="stat-tile">
+            <div class="stat-tile__number">↑ Revenue</div>
+            <p>measurable increase on the B2C side</p>
+          </div>
+        </div>
+      </section>
+
+      <div class="wrap">
+        <p class="cs-contact reveal">
+          For more details on the project, contact me for a deep dive on the
+          topic —
+          <a class="link-underline" href="mailto:hello@jacoblaird.com"
+            >hello@jacoblaird.com</a
+          >.
+        </p>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap footer-bar">
+        <span>© Jacob Laird 2026</span>
+        <a href="mailto:hello@jacoblaird.com">hello@jacoblaird.com</a>
+      </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

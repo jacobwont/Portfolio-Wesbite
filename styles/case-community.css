@@ -1,0 +1,375 @@
+/* ============================================================
+   Community as Curriculum — case study page
+   ============================================================ */
+
+/* ---- Shared flat card ---- */
+
+.cc-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+}
+
+/* ---- Hero video ---- */
+
+.cc-hero-stage {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  background: #04162e;
+  margin-top: var(--space-xl);
+}
+
+.cc-hero-stage iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+@media (max-width: 640px) {
+  .cc-hero-stage {
+    aspect-ratio: 4 / 5;
+    border-radius: var(--radius-lg);
+  }
+
+  /* Container is now portrait (4:5) but the video is landscape (16:9), so
+     it's scaled up and centred on the width axis to cover without
+     letterboxing. */
+  .cc-hero-stage iframe {
+    inset: auto;
+    top: 50%;
+    left: 50%;
+    width: 222%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/* ---- Decorative stickers on section headings ---- */
+
+.cc-section-heading {
+  position: relative;
+}
+
+.cc-sticker {
+  position: absolute;
+  top: -0.5rem;
+  right: 0;
+  width: 64px;
+  filter: drop-shadow(0 10px 18px rgba(20, 20, 20, 0.16));
+}
+
+.cc-sticker--globe {
+  transform: rotate(-6deg);
+}
+
+.cc-sticker--smiley {
+  transform: rotate(6deg);
+}
+
+.cc-sticker--apple {
+  width: 56px;
+  transform: rotate(-8deg);
+}
+
+.cc-sticker--palms {
+  width: 58px;
+  transform: rotate(-5deg);
+}
+
+.cc-sticker--flower {
+  width: 52px;
+  transform: rotate(8deg);
+}
+
+.cc-sticker--monkey {
+  width: 60px;
+  transform: rotate(-7deg);
+}
+
+@media (max-width: 640px) {
+  .cc-sticker {
+    width: 48px;
+    top: -0.25rem;
+  }
+}
+
+/* ---- Full width case study photos ---- */
+
+.cc-media {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-lg);
+  margin-top: var(--space-xl);
+}
+
+/* ---- Recurring thesis line ---- */
+
+.cc-thesis {
+  margin-top: var(--space-2xl);
+  font-family: var(--font-display);
+  font-size: var(--fs-h3);
+  font-weight: 700;
+  line-height: var(--lh-snug);
+  letter-spacing: var(--ls-heading);
+}
+
+/* ---- Body copy ---- */
+
+.cc-copy p {
+  color: var(--color-body);
+}
+
+.cc-copy p + p {
+  margin-top: var(--space-md);
+}
+
+/* ---- Three-up cards (Engage/Investigate/Act, Explore/Go Deep/Test) ---- */
+
+.cc-trio {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-lg);
+  margin-top: var(--space-xl);
+}
+
+.cc-trio__eyebrow {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: var(--ls-eyebrow);
+  color: var(--color-body-soft);
+  margin-bottom: 0.6em;
+}
+
+.cc-trio__item h4 {
+  font-size: 1.375rem;
+  margin-bottom: 0.5em;
+}
+
+.cc-trio__item p {
+  color: var(--color-body);
+}
+
+/* ---- Two-column intro (Partner not client / pipeline) ---- */
+
+.cc-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-lg);
+  margin-top: var(--space-xl);
+}
+
+.cc-columns h4 {
+  font-size: 1.375rem;
+  margin-bottom: var(--space-sm);
+}
+
+.cc-columns p {
+  color: var(--color-body);
+}
+
+/* ---- Numbered pipeline steps (stacked cards) ---- */
+
+.cc-steps {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  margin-top: var(--space-xl);
+}
+
+.cc-step {
+  display: flex;
+  align-items: center;
+  gap: var(--space-lg);
+}
+
+.cc-step__num {
+  flex: none;
+  width: 44px;
+  height: 44px;
+}
+
+.cc-step h4 {
+  font-size: 1.1875rem;
+  margin-bottom: 0.2em;
+}
+
+.cc-step p {
+  color: var(--color-body);
+}
+
+/* ---- Milestone grid ---- */
+
+.cc-milestones {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-md);
+  margin-top: var(--space-xl);
+}
+
+.cc-milestone__eyebrow {
+  display: block;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: var(--ls-eyebrow);
+  color: var(--color-body-soft);
+  margin-bottom: 0.6em;
+}
+
+.cc-milestone h4 {
+  font-size: 1.1875rem;
+  margin-bottom: 0.5em;
+}
+
+.cc-milestone p {
+  color: var(--color-body);
+  font-size: var(--fs-small);
+}
+
+/* ---- Synthesis video row ---- */
+
+.cc-synthesis {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xl);
+  margin-top: var(--space-xl);
+}
+
+.cc-synthesis__device {
+  flex: none;
+  width: 130px;
+  aspect-ratio: 1;
+  filter: drop-shadow(0 10px 24px -8px rgba(20, 20, 20, 0.35));
+}
+
+.cc-synthesis__device img {
+  width: 100%;
+  height: 100%;
+}
+
+.cc-synthesis__text p {
+  color: var(--color-body);
+}
+
+/* ---- Learner solution cards ---- */
+
+.cc-solutions {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-lg);
+  margin-top: var(--space-xl);
+}
+
+.cc-solution {
+  overflow: hidden;
+  padding: 0;
+}
+
+.cc-solution__cover {
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+}
+
+.cc-solution__cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.cc-solution__body {
+  padding: var(--space-lg);
+}
+
+.cc-solution__cat {
+  display: block;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: var(--ls-eyebrow);
+  color: var(--color-body-soft);
+  margin-bottom: 0.5em;
+}
+
+.cc-solution h4 {
+  font-size: 1.375rem;
+  margin-bottom: 0.4em;
+}
+
+.cc-solution p {
+  color: var(--color-body);
+}
+
+/* ---- Stats ---- */
+
+.cc-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-md);
+  margin-top: var(--space-xl);
+}
+
+.cc-stat {
+  text-align: center;
+  padding-block: var(--space-xl);
+}
+
+.cc-stat__number {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 2rem + 2vw, 3.5rem);
+  font-weight: 800;
+  letter-spacing: var(--ls-tight);
+  line-height: 1;
+}
+
+.cc-stat p {
+  margin-top: var(--space-sm);
+  color: var(--color-body);
+}
+
+/* ---- Responsive ---- */
+
+@media (max-width: 900px) {
+  .cc-trio {
+    grid-template-columns: 1fr;
+  }
+
+  .cc-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .cc-milestones {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cc-synthesis {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cc-solutions {
+    grid-template-columns: 1fr;
+  }
+
+  .cc-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .cc-milestones {
+    grid-template-columns: 1fr;
+  }
+
+  .cc-step {
+    align-items: flex-start;
+  }
+}
