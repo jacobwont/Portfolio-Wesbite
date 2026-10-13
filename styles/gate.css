@@ -1,0 +1,120 @@
+/* Password gate for case studies */
+
+.gate-content {
+  transition: filter 0.5s var(--ease-out), opacity 0.5s var(--ease-out);
+}
+
+.is-gated .gate-content {
+  max-height: 90vh;
+  overflow: hidden;
+  filter: blur(28px);
+  opacity: 0.85;
+  pointer-events: none;
+  user-select: none;
+}
+
+.gate-zone {
+  position: relative;
+}
+
+.gate {
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-md, 16px);
+  pointer-events: none;
+}
+
+.is-gated .gate {
+  display: flex;
+}
+
+.gate__card {
+  width: min(380px, 100%);
+  padding: 26px 28px 28px;
+  background: var(--color-surface);
+  border-radius: var(--radius-md);
+  box-shadow: 0 20px 60px rgba(20, 20, 20, 0.14);
+  opacity: 0;
+  transform: translateY(16px);
+  pointer-events: none;
+  transition: opacity 0.4s var(--ease-out), transform 0.4s var(--ease-out);
+}
+
+.gate.is-visible .gate__card {
+  opacity: 1;
+  transform: none;
+  pointer-events: auto;
+}
+
+.gate__title {
+  margin: 0 0 18px;
+  font-size: 1.5rem;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: var(--color-ink);
+}
+
+.gate__input {
+  width: 100%;
+  padding: 0.85em 1em;
+  margin-bottom: 12px;
+  font: inherit;
+  font-size: var(--fs-small);
+  color: var(--color-ink);
+  background: #fff;
+  border: 1px solid var(--color-border-strong);
+  border-radius: 10px;
+}
+
+.gate__input:focus {
+  outline: none;
+  border-color: var(--color-focus);
+}
+
+.gate.has-error .gate__input {
+  border-color: var(--accent-pink);
+}
+
+.gate__submit {
+  width: 100%;
+  padding: 0.85em;
+  font: inherit;
+  font-size: var(--fs-small);
+  font-weight: 500;
+  color: #fff;
+  background: #262626;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background var(--dur-fast) var(--ease-out);
+}
+
+.gate__submit:disabled {
+  background: #9a9a9a;
+  cursor: default;
+}
+
+.gate__error {
+  min-height: 0;
+  margin: 8px 0 0;
+  font-size: 0.8rem;
+  color: var(--accent-pink);
+}
+
+.gate__error:empty {
+  display: none;
+}
+
+/* Stand-in shapes shown blurred behind the card while locked */
+.gate-decoy {
+  height: 280px;
+  margin: var(--space-xl, 48px) 0;
+  border-radius: var(--radius-lg);
+}
+.gate-decoy--a { background: linear-gradient(120deg, #c9d6ea, #e8dcd6 55%, #bdbdbd); }
+.gate-decoy--b { background: linear-gradient(120deg, #e6d3d3, #f1efe8 50%, #d3dcea); }
+.gate-decoy--c { background: linear-gradient(120deg, #d3dcea, #cfcfcf 60%, #eadfd8); }
